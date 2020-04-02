@@ -12,15 +12,15 @@
         }
     </style>
     <body>
-        <script src="../../lib/d3.js"></script>
-        <script src="../../lib/d3-selection-multi.v1.js"></script>
+        <script src="../lib/d3.js"></script>
+        <script src="../lib/d3-selection-multi.v1.js"></script>
 		<script type="text/javascript">
             var svgWidth=800, svgHeight=600;
             var svg = d3.select('body')
                 .append('svg')
                 .attrs({ width: svgWidth, height: svgHeight });
 
-            d3.csv("../../data/year2015.csv",
+            d3.csv("../data/year2015.csv",
                 function (error, rawData) {
                     var data = rawData.map(function (d) {
                         return {
