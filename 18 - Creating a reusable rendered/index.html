@@ -12,8 +12,8 @@
         }
     </style>
     <body>
-        <script src="../../lib/d3.js"></script>
-        <script src="../../lib/d3-selection-multi.v1.js"></script>
+        <script src="../lib/d3.js"></script>
+        <script src="../lib/d3-selection-multi.v1.js"></script>
 		<script type="text/javascript">
             var svgWidth=800, svgHeight=600;
 
@@ -80,7 +80,7 @@
             }
 
             function loadData(onLoadComplete) {
-                d3.csv("../../data/chart_data.csv",
+                d3.csv("../data/chart_data.csv",
                     function (error, rawData) {
                         var allYearsData = rawData.map(function (d) {
                             return {
