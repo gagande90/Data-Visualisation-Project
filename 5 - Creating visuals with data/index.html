@@ -2,7 +2,9 @@
 <html>
     <head></head>
     <body>
-        <script src="https://d3js.org/d3.v5.min.js"></script>
+	    <script src = "../lib/d3.js"></script>
+	    <script src = "../lib/d3-selection-multi.v1.js"></script>
+	    
 		<script type="text/javascript">
             console.log("Your D3 code goes here...");
 
@@ -13,7 +15,7 @@
                 .append('svg')
                 .attrs({ width: _width, height: _height });
 
-            d3.csv("../../data/year2015.csv",
+            d3.csv("../data/year2015.csv",
                 function (error, rawData) {
                     var data = rawData.map(function (d) {
                         return {
