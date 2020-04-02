@@ -2,8 +2,8 @@
 <html>
     <head></head>
     <body>
-        <script src="../../lib/d3.js"></script>
-        <script src="../../lib/d3-selection-multi.v1.js"></script>
+        <script src="../lib/d3.js"></script>
+        <script src="../lib/d3-selection-multi.v1.js"></script>
 		<script type="text/javascript">
             var width=800, height=600;
             var svg = d3.select('body')
@@ -11,7 +11,7 @@
                 .attrs({ width: width, height: height, 
                          style: 'background-color: #EEEEEE' });
 
-            d3.csv("../../data/year2015.csv",
+            d3.csv("../data/year2015.csv",
                 function (error, rawData) {
                     var data = rawData.map(function (d) {
                         return {
